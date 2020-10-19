@@ -22,7 +22,7 @@ import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-class MainActivity : AppCompatActivity(), MapView.OnStyleImageMissingListener {
+class MainActivityAsyncImageLoading : AppCompatActivity(), MapView.OnStyleImageMissingListener {
 
     private var currentStyle: Style? = null
 
