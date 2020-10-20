@@ -55,6 +55,7 @@ class MainActivityClusteringGlitch : AppCompatActivity(), MapView.OnStyleImageMi
     }
 
     private fun initWithStyle(style: Style) {
+        // add static images
         style.addImage(
             "clustered",
             BitmapUtils.getDrawableFromRes(this, R.drawable.mapbox_compass_icon)!!
@@ -108,8 +109,7 @@ class MainActivityClusteringGlitch : AppCompatActivity(), MapView.OnStyleImageMi
     }
 
     override fun onStyleImageMissing(id: String) {
-        // for the sake of simplicity we are not taking into account
-        // that this id might already be processing so we do not have to start another coroutine
+        // noop in this example
     }
 }
 
